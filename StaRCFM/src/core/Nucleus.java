@@ -21,7 +21,6 @@ public class Nucleus {
 				break;
 			case 2:
 				massNumber = Double.parseDouble(subString);
-				
 			}
 
 			packedNucleus = packedNucleus.substring(packedNucleus.indexOf('\t') + 1);
