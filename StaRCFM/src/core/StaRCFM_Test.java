@@ -12,3 +12,4 @@ public class StaRCFM_Test {
 			return;
 	}
 }
+
