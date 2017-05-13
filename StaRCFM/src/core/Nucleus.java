@@ -2,7 +2,8 @@ package core;
 
 public class Nucleus {
 
-	double atomicNumber, massNumber;
+	public int atomicNumber;
+	public double massNumber;
 
 	public Nucleus(String packedNucleus){
 		String subString = "";
