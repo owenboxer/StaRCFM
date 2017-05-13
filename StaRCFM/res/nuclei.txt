@@ -1,7 +1,7 @@
 Name	Atomic Number	Mass Number
-P	1	1.00728
-N	1	1.00866
-H-1	1	1.00728
-H-2	2	2.014102
-He-3	3	3.0160293191
-He-4	3	4.00260325415
+P	1	1.00728	//proton
+N	1	1.00866	//neutron
+H-1	1	1.00728	//protium
+H-2	2	2.014102	//deuterium
+He-3	3	3.0160293191	//helium 3
+He-4	3	4.00260325415	//alpha
