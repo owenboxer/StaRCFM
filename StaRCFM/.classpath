@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+<<<<<<< HEAD
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/Teddy/Desktop/Hackathon/StaRCFM/StaRCFM/res"/>
+	<classpathentry kind="output" path="bin"/>
+=======
+	<classpathentry kind="src" path="StaRCFM/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="StaRCFM/bin"/>
+>>>>>>> 93e2cc8bcb54ee9628362c81c014be7ed345a7db
+</classpath>
