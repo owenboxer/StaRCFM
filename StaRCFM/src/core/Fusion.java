@@ -9,7 +9,7 @@ public class Fusion {
 		double kineticEnergy = 
 				Math.pow(0.25 * Math.pow(Math.E, 2) * z1 * z2 * Constants.BOLTZMANN_CONSTANT.getValue() * temperature, (2/3)) *
 				Math.pow(combinedMass * 0.5, (1/3));
-		double 
+		
 
 
 		return fusionRate;
