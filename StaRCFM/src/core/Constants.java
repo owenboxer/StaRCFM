@@ -1,8 +1,9 @@
 package core;
 
 public enum Constants {
-	ELEMENTARY_CHARGE(1.602217662E-19), //proton and electron charge in Coulombs
-	FINE_STRUCTURE_CONSTANT(0.0073);
+	GRAVITATIONAL_CONSTANT(6.67E-11),
+	HYDROGEN_MASS(1.67E-27),
+	BOLTZMANN_CONSTANT(1.38064852E-23);
 
 
 

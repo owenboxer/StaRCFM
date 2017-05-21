@@ -1,15 +1,18 @@
 package core;
 
 public class StarLayer {
-	double temperature = 0.15;
-	double relativeDensity[] = new double[4];
-	double rate[] = new double[3]; //rate of 
+	double temperature = 0.15; //temperature of layer
+	double relativeDensity[] = new double[4]; //density of 
+	double rate[] = new double[3]; //rate of various fusion reactions in this layer
 	double totalPressure, gasPressure, radiationPressure; 
 	/* gas pressure associated with ideal gas laws
 	 * radiation pressure associated with outward pressure from fusion
 	 */
+	double height;
 
-	public StarLayer(){
+	public StarLayer(double height){
+		this.height = height;
+
 		relativeDensity[0] = 1;
 		relativeDensity[1] = 0;
 		relativeDensity[2] = 0;
@@ -37,9 +40,5 @@ public class StarLayer {
 		double energy = ((2 * StaRCFM_Test.nucleus[0].massNumber) + (2 * StaRCFM_Test.nucleus[1].massNumber)
 				- (StaRCFM_Test.nucleus[5].massNumber)) * rate[2] * StaRCFM_Test.timeInterval * 9E16;
 		//if (StaRCFM_Test.time % 3000 == 0) System.out.println(energy);
-	}
-
-	public void calcPressure(){
-		
 	}
 }
