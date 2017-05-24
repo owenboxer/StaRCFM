@@ -32,7 +32,7 @@ public class StarLayer {
 		relativeDensity[2] -= 2 * rate[2] * StaRCFM_Test.timeInterval * StaRCFM_Test.nucleus[4].massNumber;
 		relativeDensity[3] += rate[2] * StaRCFM_Test.timeInterval * StaRCFM_Test.nucleus[5].massNumber;
 
-		if (StaRCFM_Test.time % 10000 == 0) System.out.println(relativeDensity[2]);
+		//if (StaRCFM_Test.time % 10000 == 0) System.out.println(relativeDensity[2]);
 	}
 	public void calcEnergy(){
 		double bindingEnergy = 0;

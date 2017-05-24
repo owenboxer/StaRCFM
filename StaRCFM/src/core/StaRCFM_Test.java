@@ -13,15 +13,20 @@ public class StaRCFM_Test {
 	public static StarLayer starLayer = new StarLayer(); // layers are defined such that kg/m^2 is constant
 
 	public static void main(String[] args) {
+		String[] packedNucleus;
+
+		packedNucleus = util.FileHandler.readFile("res/nuclei.txt"); //create nuclei
+		for (int line = 0; line < packedNucleus.length - 1; line++)
+			nucleus[line] = new Nucleus(packedNucleus[line + 1]);	
+
 		runSimulation();
 	}
 	public static void runSimulation(){
-		for (int t = 0; t < 3000000; t++){
+		for (int t = 0; t < 1000000; t++){
 			starLayer.getRates();
 			starLayer.calcRelativeDensity();
 			starLayer.calcEnergy();
 		}
-			
 	}
 
 	/*public static void calcPressure(){
