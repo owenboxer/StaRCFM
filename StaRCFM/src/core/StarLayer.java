@@ -10,9 +10,7 @@ public class StarLayer {
 	 */
 	double height;
 
-	public StarLayer(double height){
-		this.height = height;
-
+	public StarLayer(){
 		relativeDensity[0] = 1;
 		relativeDensity[1] = 0;
 		relativeDensity[2] = 0;
@@ -37,8 +35,8 @@ public class StarLayer {
 		if (StaRCFM_Test.time % 10000 == 0) System.out.println(relativeDensity[2]);
 	}
 	public void calcEnergy(){
-		double energy = ((2 * StaRCFM_Test.nucleus[0].massNumber) + (2 * StaRCFM_Test.nucleus[1].massNumber)
-				- (StaRCFM_Test.nucleus[5].massNumber)) * rate[2] * StaRCFM_Test.timeInterval * 9E16;
-		//if (StaRCFM_Test.time % 3000 == 0) System.out.println(energy);
+		double bindingEnergy = 0;
+		double energy = rate[2] * bindingEnergy * StaRCFM_Test.timeInterval;
+		if (StaRCFM_Test.time % 3000 == 0) System.out.println(energy);
 	}
 }
